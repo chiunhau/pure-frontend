@@ -8,7 +8,7 @@ var jadeAllPath = './src/templates/**/*.jade';
 // Sass
 
 gulp.task('sass', function() {
-	return gulp.src('./src/scss/main.scss')
+	return gulp.src(sassAllPath)
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('./public/stylesheets'))
 });
